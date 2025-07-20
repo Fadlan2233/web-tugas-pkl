@@ -1,0 +1,189 @@
+/* Reset dan gaya dasar */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(LARRY.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header teks di atas */
+.larry-ontop {
+  text-align: top;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1000;
+}
+.larry-regis {
+  text-align: top;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(163, 0, 0);
+  text-shadow: #000000;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+/* Container untuk form agar tidak tabrakan dengan .larry-ontop */
+.container {
+  margin-top: 120px; /* beri jarak dari header */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.container-reg {
+  margin-top: 120px; /* beri jarak dari header */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+/* Form login */
+form {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Input field */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Tombol */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2d89ef;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1c6cd6;
+}
+
+/* Link */
+a {
+  color: #2d89ef;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Pesan sukses dan error */
+p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+/* Dashboard Tema Monster */
+
+body.larry-dashboard {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-image: url('bg.jpg'); /* Ganti dengan background monster kamu */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lair-header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    margin: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.lair-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ff3c3c;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.larry-name {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.btn-logout {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #c0392b;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background-color: #a93226;
+}
+
+.monster-info {
+    margin-top: 30px;
+    animation: slideUp 2s ease;
+}
+
+.monster-info img {
+    width: 150px;
+    filter: drop-shadow(0 0 10px crimson);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
